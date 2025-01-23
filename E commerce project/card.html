@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An e-commerce project for Brandlove Express.">
+    <title>E-commerce Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Navbar -->
+    <i class="fas fa-bars fa-2x" id="menu-icon" aria-label="Menu"></i>
+    <nav id="menu" class="hidden">
+        <ul class="nav-upper flex-space-around">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="register.html" class="nav-link">Register</a></li>
+            <li><a href="login.html" class="nav-link">Login</a></li>
+            <li><a href="logout.html" class="nav-link">Logout</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li>
+                <a href="profile.html" class="nav-link">
+                    <img src="photo_2025-01-07_16-15-43.jpg" alt="User profile picture" class="profile-icon" />
+                </a>
+            </li>
+        </ul>
+        <ul class="nav-lower flex-space-around">
+            <li><a href="index.html" class="nav-brand">Brandlove Express</a></li>
+            <li>
+                <a href="card.html" class="nav-link">
+                    <i class="fa-solid fa-cart-shopping"></i> Cart: 2 products - $120.4
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Navbar Ends -->
+
+    <!-- Main Content -->
+    <main>
+        <div class="card flex-center">
+            <div class="card_items">
+                <div class="card_items-heading">
+                    <h2>Shopping Cart [2 items]</h2>
+                    <div class="card_items-action">
+                        <label for="select-all">
+                            <input type="checkbox" id="select-all"> Select all items
+                        </label>
+                        <button class="btn" aria-label="Delete selected items">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                        <button class="btn">Shop More</button>
+                    </div>
+                </div>
+
+                <!-- Product 1 -->
+                <div class="card_item flex-space-around">
+                    <input type="checkbox" />
+                    <img src="script/download.jpeg" alt="Sony v-4 Headphone" class="card_item-img" />
+                    <div class="card_item-description">
+                        <h3>Sony v-4 Headphone</h3>
+                        <p class="product_price">Price: $225.99</p>
+                        <p class="shipping-info">Shipping: Free</p>
+                    </div>
+                    <div class="card_item-actions">
+                        <button class="btn" aria-label="Delete item"><i class="fas fa-trash-alt"></i></button>
+                        <button class="btn" aria-label="Increase quantity"><i class="fas fa-plus"></i></button>
+                        <span>3</span>
+                        <button class="btn" aria-label="Decrease quantity"><i class="fas fa-minus"></i></button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="card_item flex-space-around">
+                    <input type="checkbox" />
+                    <img src="nike shoes.jpeg" alt="Nike Shoes" class="card_item-img" />
+                    <div class="card_item-description">
+                        <h3>Nike Shoes</h3>
+                        <p class="product_price">Price: $88.39</p>
+                        <p class="shipping-info">Shipping: Free</p>
+                    </div>
+                    <div class="card_item-actions">
+                        <button class="btn" aria-label="Delete item"><i class="fas fa-trash-alt"></i></button>
+                        <button class="btn" aria-label="Increase quantity"><i class="fas fa-plus"></i></button>
+                        <span>2</span>
+                        <button class="btn" aria-label="Decrease quantity"><i class="fas fa-minus"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Payment Summary -->
+            <div class="card_payment">
+                <div class="card_payment-summary">
+                    <h2>Payment Summary</h2>
+                    <div class="summary_item">
+                        <p>Subtotal:</p>
+                        <p>$314.00</p>
+                    </div>
+                    <div class="summary_item">
+                        <p>Shipping Cost:</p>
+                        <p>$2.50</p>
+                    </div>
+                    <div class="summary_item total">
+                        <p>Total Cost:</p>
+                        <p>$344.38</p>
+                    </div>
+                    <button class="btn card_payment-btn">
+                        Pay Now
+                    </button>
+                </div>
+                <div class="card_payment-methods card">
+<h2>Payment Methods</h2>
+                 <div>
+                   <i class="fa-brands fa-cc-visa fa-3x"></i>
+                   <i class="fa-brands fa-cc-apple-pay fa-3x"></i> 
+                   <i class="fa-brands fa-cc-amex fa-3x"></i> 
+                   <i class="fa-brands fa-cc-amazon-pay fa-3x"></i>
+                   <i class="fa-brands fa-cc-paypal fa-3x"></i>   
+                 </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer flex-space-around">
+        <div>
+            <label for="subscribe">Subscribe to our newsletter:</label>
+            <input type="email" id="subscribe" placeholder="Your Email Address" />
+            <button class="btn btn-subscribe">Subscribe</button>
+        </div>
+        <div>
+            <p>&copy; 2025 Brandlove Express. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer Ends -->
+</body>
+</html>
